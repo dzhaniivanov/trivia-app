@@ -1,5 +1,6 @@
 import "./app.css";
 import { useState } from "react";
+import Trivia from "./components/Trivia";
 
 function App() {
 
@@ -27,7 +28,15 @@ function App() {
 
   return (
     <div className="app">
-      <div className="main">main</div>
+      <div className="main">
+        <div className="top">
+          <div className="timer">30</div>
+        </div>
+        <div className="bottom">
+          <Trivia/>
+        </div>
+
+      </div>
       <div className="pyramid">
         <ul className="moneyList">
           {moneyPyramid.map((m) => (
