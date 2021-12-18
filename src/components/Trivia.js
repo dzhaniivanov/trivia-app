@@ -13,9 +13,9 @@ const Trivia = ({ data, setStop, questionNumber, setQuestionNumber }) => {
     const [correctAnswer]=useSound(correct);
     const [wrongAnswer]=useSound(wrong);
 
-    useEffect(()=>{
+/*     useEffect(()=>{
         letsPlay();
-    },[letsPlay]);
+    },[letsPlay]); */
 
 
     useEffect(() => {
